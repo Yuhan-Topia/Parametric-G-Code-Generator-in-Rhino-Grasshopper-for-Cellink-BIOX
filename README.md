@@ -15,7 +15,7 @@ Welcome to the **BIOX G-code Generator** repository! This project provides a rob
 ## 📂 Repository Structure
 
 ```text
-.
+.Parametric-G-Code-Generator-in-Rhino-Grasshopper-for-Cellink-BIOX
 ├── gcode/                  # Generators for BIOX software Version 1
 │   ├── cube.gh
 │   ├── wave.gh
@@ -38,3 +38,5 @@ Rhino 8
 Grasshopper plugin
 Xylinux plugin
 Human UI plugin
+
+![Generator](images/outcome.png)
