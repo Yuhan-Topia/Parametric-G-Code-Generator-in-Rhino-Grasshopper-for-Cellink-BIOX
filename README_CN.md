@@ -1,53 +1,90 @@
-
----
-
-### ② `README_CN.md`（中文版）
-
-```markdown
+````markdown
 ![Generator](images/Generator.png)
 
-# 🖨️ BIOX G-code Generator：基于 Rhino-Grasshopper 的 G-code 生成器
+# 🖨️ Cellink-BIOX G-code Generator
 
-[🇬🇧 English](README.md)
+[![Language](https://img.shields.io/badge/Language-English%20%7C%20%E4%B8%AD%E6%96%87-blue.svg)](README.md)
 
-欢迎来到 **BIOX G-code Generator** 项目！
+## 📖 项目简介
 
-本项目基于 **Rhino-Grasshopper** 开发，是一个参数化 G-code 生成工具，专门针对 **Cellink-BIOX 3D 打印机**上的直接墨水书写（Direct Ink Writing, DIW）3D 打印进行优化，可用于软硅胶材料以及碳纳米管（CNTs）的打印。
+欢迎使用 **Cellink-BIOX G-code 生成器**！
 
-## ✨ 主要功能
+本项目基于 **Rhino-Grasshopper** 开发，旨在为 **Cellink-BIOX 生物 3D 打印机**直接生成可执行的定制化 G-code。
 
-- **参数化设计 📐**：支持对打印尺寸、填充密度、正/负结构、打印坐标/位置以及动态打印速度等参数进行灵活调整。
+本项目支持以下五种基础形状的生成：
 
-- **多种微结构 🧊**：支持生成多种拓扑结构的打印路径，包括 `Cube`（立方体）、`Cylinder`（圆柱体）、`Wave`（波浪）、`Hemisphere`（半球）、`Cone`（圆锥）以及 `Base`（基底）。
+- `Cube` — 正方体
+- `Cylinder` — 圆柱体
+- `Wave` — 波浪
+- `Hemisphere` — 半球体
+- `Cone` — 圆锥体
 
-- **双软件版本兼容 🔄**：项目包含两套不同的算法（`gcode` 和 `gcode2` 文件夹），分别适配不同版本的 Cellink-BIOX 打印机软件。
+通过参数化设计，您可以自由定义打印模型的**尺寸大小、填充密度、正负结构、空间位置以及打印速度**等核心参数。
 
-- **适合初学者的 GUI 🖥️**：提供专门的 `Cylinder_4_posi.gh` 文件，并使用 **Human UI** 插件构建图形化操作界面。即使不熟悉 Grasshopper 复杂的节点画布，初学者也可以通过直观的界面调整参数并生成 G-code。
+针对 BIOX 打印机的不同软件版本，本项目专门设计了两套代码，以确保与不同版本的软件兼容。
+
+## ✨ 核心功能
+
+### 📐 5 种参数化几何图形
+
+涵盖正方体、圆柱体、波浪形、半球体和圆锥体五种基础结构，可根据参数生成对应的打印路径。
+
+### ⚙️ 高度可定制
+
+支持自由调节：
+
+- 打印模型尺寸
+- 填充密度
+- 正结构 / 负结构
+- 打印位置
+- 打印速度
+
+### 🔄 双版本兼容
+
+项目分别针对 BIOX 打印机软件的不同版本提供了两套 Grasshopper 脚本：
+
+- `gcode/` — 适用于 BIOX 打印机软件版本一
+- `gcode2/` — 适用于 BIOX 打印机软件版本二
+
+### 🖥️ 新手友好图形界面
+
+项目提供 `Cylinder_4_posi.gh` 文件，并结合 **Human UI** 插件制作了直观的图形化参数界面。
+
+无需理解复杂的 Grasshopper 节点连接，初学者也可以通过图形化界面调整参数并快速生成 G-code，实现更加直观的参数化操作。
 
 ## 📂 仓库结构
 
 ```text
-Parametric-G-Code-Generator-in-Rhino-Grasshopper-for-Cellink-BIOX
-├── gcode/                  # BIOX 软件版本 1 的 G-code 生成器
-│   ├── cube.gh
-│   ├── wave.gh
-│   ├── hemisphere.gh
-│   ├── base.gh
-│   ├── cylinder/           # 包含多个迭代版本
-│   └── cone/               # 包含多个迭代版本
-├── gcode2/                 # BIOX 软件版本 2 的 G-code 生成器
-│   ├── cube.gh
-│   ├── cylinder.gh
-│   ├── wave.gh
-│   ├── hemisphere.gh
-│   └── base.gh
-├── images/                 # 项目图片及文档素材
-├── Cylinder_4_posi.gh      # 🌟 Human UI 图形化界面（推荐初学者使用）
-├── README.md               # 英文说明文档
-└── README_CN.md            # 中文说明文档
+📦 Cellink-BIOX-Gcode-Generator
+ ┣ 📂 gcode                  # 适用于 BIOX 打印机软件版本一的生成器
+ ┃ ┣ 📜 cube.gh
+ ┃ ┣ 📜 wave.gh
+ ┃ ┣ 📜 hemisphere.gh
+ ┃ ┣ 📜 base.gh
+ ┃ ┣ 📂 cylinder             # 包含多个历史版本
+ ┃ ┗ 📂 cone                 # 包含多个历史版本
+ ┣ 📂 gcode2                 # 适用于 BIOX 打印机软件版本二的生成器
+ ┃ ┣ 📜 cube.gh
+ ┃ ┣ 📜 cylinder.gh
+ ┃ ┣ 📜 wave.gh
+ ┃ ┣ 📜 hemisphere.gh
+ ┃ ┗ 📜 base.gh
+ ┣ 📂 images                 # 存放项目相关图片资源
+ ┣ 📜 Cylinder_4_posi.gh     # 图形化参数界面，需安装 Human UI 插件
+ ┣ 📜 README.md              # 英文说明文档
+ ┗ 📜 README_CN.md           # 中文说明文档
+````
 
-## ⭕️ Requirements
-Rhino 8
-Grasshopper plugin
-Xylinux plugin
-Human UI plugin
+## 🖨️ 示例结果
+
+![Outcome](images/outcome.png)
+
+## ⭕️ 环境要求
+
+* Rhino 8
+* Grasshopper
+* Xylinus plugin
+* Human UI plugin
+
+```
+```
