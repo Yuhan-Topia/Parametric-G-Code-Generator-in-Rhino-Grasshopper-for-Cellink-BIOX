@@ -9,11 +9,11 @@
 Welcome to the **Cellink-BIOX G-code Generator**!
 This project, built on Rhino-Grasshopper, aims to directly generate executable, customized G-code for the **Cellink-BIOX bio-3D printer**.
 This project supports the generation of the following five basic shapes:
-- `Cube` — Array of cube
-- `Cylinder` — Array of cylinder
-- `Wave` — Array of wave
-- `Hemisphere` — Array of hemisphere
-- `Cone` — Array of cone
+- `Cube` — Array of cubes
+- `Cylinder` — Array of cylinders
+- `Wave` — Array of waves
+- `Hemisphere` — Array of hemispheres
+- `Cone` — Array of cones
 
 Through parametric design, you can freely define core parameters of the printed model, such as **size, infill density, positive and negative structure, spatial position, and printing speed**.
 This project has designed two sets of code specifically for different versions of the BIOX printer software to ensure compatibility with different versions.
