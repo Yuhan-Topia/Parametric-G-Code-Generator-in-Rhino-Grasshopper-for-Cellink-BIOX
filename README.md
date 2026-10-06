@@ -36,11 +36,8 @@ Parametric-G-Code-Generator-in-Rhino-Grasshopper-for-Cellink-BIOX
 └── README.md               # You are here
 ````
 ## ⭕️ Requirements
-Rhino 8
-Grasshopper plugin
-Xylinus plugin
-Human UI plugin
-
-<a name="en"></a>
-![Generator](images/Generator.png)
+* Rhino 8
+* Grasshopper
+* Xylinus plugin
+* Human UI plugin
 
