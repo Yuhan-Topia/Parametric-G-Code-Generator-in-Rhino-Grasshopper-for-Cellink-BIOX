@@ -6,7 +6,17 @@
 
 [![Language](https://img.shields.io/badge/Language-English%20%7C%20%E4%B8%AD%E6%96%87-blue.svg)](README_CN.md)
 
-Welcome to the **BIOX G-code Generator** repository! This project provides a robust, parametric G-code generation tool built with Rhino-Grasshopper. It is specifically optimized for Direct Ink Writing (DIW) 3D printing of soft silicone materials and Carbon Nanotubes (CNTs) directly on **Cellink-BIOX** 3D printers. 
+Welcome to the **Cellink-BIOX G-code Generator**!
+This project, built on Rhino-Grasshopper, aims to directly generate executable, customized G-code for the **Cellink-BIOX bio-3D printer**.
+This project supports the generation of the following five basic shapes:
+- `Cube` — a cube
+- `Cylinder` — a cylinder
+- `Wave` — a wave
+- `Hemisphere` — a hemisphere
+- `Cone` — a cone
+
+Through parametric design, you can freely define core parameters of the printed model, such as **size, infill density, positive and negative structure, spatial position, and printing speed**.
+This project has designed two sets of code specifically for different versions of the BIOX printer software to ensure compatibility with different versions.
 
 ## ✨ Key Features
 - **Parametric Design 📐**: Fully customizable parameters including size, infill density, positive/negative structures, print coordinates/positions, and dynamic print speeds.
