@@ -1,4 +1,5 @@
 <a name="en"></a>
+![Outcome](images/outcome.png)
 ![Generator](images/Generator.png)
 
 # 🖨️ Cellink-BIOX G-code Generator
@@ -74,9 +75,6 @@
  ┣ 📜 README.md              # 英文说明文档
  ┗ 📜 README_CN.md           # 中文说明文档
 ````
-
-
-![Outcome](images/outcome.png)
 
 ## ⭕️ 环境要求
 
