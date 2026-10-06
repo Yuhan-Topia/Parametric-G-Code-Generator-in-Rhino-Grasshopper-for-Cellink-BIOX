@@ -1,8 +1,10 @@
+<a name="en"></a>
 ![Generator](images/Generator.png)
 
 # 🖨️ BIOX G-code Generator via Rhino-Grasshopper
 
-[![Language](https://img.shields.io/badge/Language-English%20%7C%20%E4%B8%AD%E6%96%87-blue.svg)](#-中文介绍)
+[![Language](https://img.shields.io/badge/Language-English%20%7C%20%E4%B8%AD%E6%96%87-blue.svg)](#zh) 
+*(Click to jump to Chinese version / 点击跳转至中文版)*
 
 Welcome to the **BIOX G-code Generator** repository! This project provides a robust, parametric G-code generation tool built with Rhino-Grasshopper. It is specifically optimized for Direct Ink Writing (DIW) 3D printing of soft silicone materials and Carbon Nanotubes (CNTs) directly on **Cellink-BIOX** 3D printers. 
 
@@ -15,7 +17,7 @@ Welcome to the **BIOX G-code Generator** repository! This project provides a rob
 ## 📂 Repository Structure
 
 ```text
-.Parametric-G-Code-Generator-in-Rhino-Grasshopper-for-Cellink-BIOX
+Parametric-G-Code-Generator-in-Rhino-Grasshopper-for-Cellink-BIOX
 ├── gcode/                  # Generators for BIOX software Version 1
 │   ├── cube.gh
 │   ├── wave.gh
@@ -39,4 +41,5 @@ Grasshopper plugin
 Xylinux plugin
 Human UI plugin
 
-![Generator](images/outcome.png)
+![Outcome](images/outcome.png) 
+
